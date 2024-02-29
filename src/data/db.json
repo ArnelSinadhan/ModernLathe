@@ -1,0 +1,64 @@
+{
+  "equipimg": [
+    {
+      "id": "1",
+      "imgSrc": "img/crankchaft.png",
+      "cardTitle": "CRANKSHAFT GRINDER MACHINE",
+      "cardText": "AMC DENMARK MADE IN GERMANY"
+    },
+    {
+      "id": "2",
+      "imgSrc": "img/CylinderHead.png",
+      "cardTitle": "CYLINDER HEAD RESURFACE MACHINE",
+      "cardText": "KRISEL AND CO AUSTRAILIAN MADE"
+    },
+    {
+      "id": "3",
+      "imgSrc": "img/Lineboar machine.png",
+      "cardTitle": "LINE BORE MACHINE",
+      "cardText": "AMC DENMARK MADE IN GERMANY"
+    },
+    {
+      "id": "4",
+      "imgSrc": "img/Milling Machine.png",
+      "cardTitle": "MILLING MACHINE (HORIZONTAL)",
+      "cardText": "AMC DENMARK MADE IN GERMANY"
+    },
+    {
+      "id": "5",
+      "imgSrc": "img/Stationary rebore machine.png",
+      "cardTitle": "STATIONARY REBORE MACHINE",
+      "cardText": "ESCLEDUM MADE IN ITALY"
+    },
+    {
+      "id": "6",
+      "imgSrc": "img/Alluminum Welding machine.png",
+      "cardTitle": "ALUMINUM MIG WELDING MACHINE",
+      "cardText": "NIHON MADE IN JAPAN"
+    },
+    {
+      "id": "7",
+      "imgSrc": "img/Lathe machine.png",
+      "cardTitle": " LATHE MACHINE 3 CHUCK 4FT",
+      "cardText": "HOWA SANGYO MADE IN JAPAN"
+    },
+    {
+      "id": "8",
+      "imgSrc": "img/Lathe machine 4 chuck 10ft.jpg",
+      "cardTitle": "LATHE MACHINE 4 CHUCK 10FT",
+      "cardText": "HOWA SANGYO MADE IN JAPAN"
+    },
+    {
+      "id": "9",
+      "imgSrc": "img/portable rebore machine.png",
+      "cardTitle": "PORTABLE REBORE MACHINE",
+      "cardText": "WAIDA MADE IN JAPAN"
+    },
+    {
+      "id": "10",
+      "imgSrc": "img/Valve reface machine.png",
+      "cardTitle": "VALVE REFACE MACHINE",
+      "cardText": "REPCO MADE IN AUSTRALIA"
+    }
+  ]
+}
