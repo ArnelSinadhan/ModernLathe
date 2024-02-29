@@ -10,7 +10,7 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <BrowserRouter basename="/Modernlathe">
+    <BrowserRouter basename="">
       <Navbars />
 
       <Routes>
