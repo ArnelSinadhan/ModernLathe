@@ -10,11 +10,11 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <BrowserRouter basename="">
+    <BrowserRouter basename="/Modernlathe">
       <Navbars />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Modernlathe" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="listOfEquipments" element={<Equipments />} />
         <Route path="services" element={<Services />} />
