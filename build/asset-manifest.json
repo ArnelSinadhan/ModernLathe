@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Modernlathe/static/css/main.f8b75e90.css",
-    "main.js": "/Modernlathe/static/js/main.e559290a.js",
+    "main.js": "/Modernlathe/static/js/main.eb081ffc.js",
     "static/media/Bg-main.png": "/Modernlathe/static/media/Bg-main.d511b0fbe40082bbc919.png",
     "static/media/fa-solid-900.ttf": "/Modernlathe/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
     "static/media/fa-brands-400.ttf": "/Modernlathe/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf",
@@ -13,10 +13,10 @@
     "static/media/fa-v4compatibility.woff2": "/Modernlathe/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/Modernlathe/index.html",
     "main.f8b75e90.css.map": "/Modernlathe/static/css/main.f8b75e90.css.map",
-    "main.e559290a.js.map": "/Modernlathe/static/js/main.e559290a.js.map"
+    "main.eb081ffc.js.map": "/Modernlathe/static/js/main.eb081ffc.js.map"
   },
   "entrypoints": [
     "static/css/main.f8b75e90.css",
-    "static/js/main.e559290a.js"
+    "static/js/main.eb081ffc.js"
   ]
 }
