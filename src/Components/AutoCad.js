@@ -9,32 +9,37 @@ function ControlledCarousel() {
     setIndex(selectedIndex);
   };
 
+  const autoCad = [
+    {
+      id: 1,
+      img: `${process.env.PUBLIC_URL}/img/Screenshot 1.png`,
+    },
+    {
+      id: 2,
+      img: `${process.env.PUBLIC_URL}/img/Screenshot 2.png`,
+    },
+    {
+      id: 3,
+      img: `${process.env.PUBLIC_URL}/img/Screenshot 3.png`,
+    },
+    {
+      id: 4,
+      img: `${process.env.PUBLIC_URL}/img/Screenshot 4.png`,
+    },
+  ];
+
   return (
     <Container xl>
       <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item>
-          <img
-            src="/img/Screenshot 1.png"
-            alt="Image 1"
-            className="autocadimg"
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            src="/img/Screenshot 2.png"
-            alt="Image 2"
-            className="autocadimg"
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            src="/img/Screenshot 3.png"
-            alt="Image 3"
-            className="autocadimg"
-          />
-        </Carousel.Item>
+        {autoCad.map((item) => (
+          <Carousel.Item key={item.id}>
+            <img
+              src={item.img}
+              alt={`Image ${item.id}`}
+              className="autocadimg"
+            />
+          </Carousel.Item>
+        ))}
       </Carousel>
     </Container>
   );

@@ -1,4 +1,5 @@
 import { Button, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
           </p>
 
           <Button className="btn-inquire">
-            <a href="/contactUs">INQUIRE HERE</a>
+            <Link to="/contactUs">INQUIRE HERE</Link>
           </Button>
         </div>
       </Container>

@@ -6,6 +6,7 @@ import {
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,14 +15,14 @@ const Footer = () => {
         fluid
         className="footer d-flex pt-3 align-items-center justify-content-center flex-column"
       >
-        <a href="/">
+        <Link to="/">
           <img
             src={process.env.PUBLIC_URL + "/img/Logo.jpg"}
             alt="moden-lathe"
             width={200}
             height={60}
           />
-        </a>
+        </Link>
         <ul className="footer-links">
           <li>
             <a href="www.facebook.com" className="socmed-links">
@@ -49,7 +50,7 @@ const Footer = () => {
           </li>
         </ul>
         <hr className="footer-line" />
-        <div className="copyrights">
+        <div className="copyrights text-center">
           Modern Lathe Copyright © 2024 | All Rights reserved
         </div>
       </Container>

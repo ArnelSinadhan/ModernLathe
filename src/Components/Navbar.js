@@ -1,32 +1,83 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import { NavbarCollapse, NavbarToggle } from "react-bootstrap";
+import { useState } from "react";
+import {
+  Container,
+  Nav,
+  NavLink,
+  Navbar,
+  NavbarCollapse,
+  NavbarToggle,
+  NavbarBrand,
+} from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Navbars = () => {
+  const [expand, updateExpanded] = useState(false);
+
   return (
     <header>
-      <Navbar collapseOnSelect expand="lg">
+      <Navbar collapseOnSelect expand="lg" expanded={expand}>
         <Container>
-          <Navbar.Brand href="/">
+          <NavbarBrand as={Link} to="/">
             <img
-              src="img/Logo.jpg"
+              src={process.env.PUBLIC_URL + "/img/Logo.jpg"}
               alt="Modern lathe"
               width={100}
               height={40}
             />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
+          </NavbarBrand>
+          <NavbarToggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => {
+              updateExpanded(expand ? false : "expanded");
+            }}
+          />
+          <NavbarCollapse id="responsive-navbar-nav">
             <Nav className="ml-auto text-center">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="about">About Us</Nav.Link>
-              <Nav.Link href="listOfEquipments">List of Equipments</Nav.Link>
-              <Nav.Link href="services">Our Services</Nav.Link>
-              <Nav.Link href="projects">Projects</Nav.Link>
-              <Nav.Link href="contactUS">Contact Us</Nav.Link>
+              <NavLink as={Link} to="/" onClick={() => updateExpanded(false)}>
+                Home
+              </NavLink>
+
+              <NavLink
+                as={Link}
+                to="/about"
+                onClick={() => updateExpanded(false)}
+              >
+                About Us
+              </NavLink>
+
+              <NavLink
+                as={Link}
+                to="/listOfEquipments"
+                onClick={() => updateExpanded(false)}
+              >
+                List of Equipments
+              </NavLink>
+
+              <NavLink
+                as={Link}
+                to="/services"
+                onClick={() => updateExpanded(false)}
+              >
+                Our Services
+              </NavLink>
+
+              <NavLink
+                as={Link}
+                to="/projects"
+                onClick={() => updateExpanded(false)}
+              >
+                Projects
+              </NavLink>
+
+              <NavLink
+                as={Link}
+                to="/contactUS"
+                onClick={() => updateExpanded(false)}
+              >
+                Contact Us
+              </NavLink>
             </Nav>
-          </Navbar.Collapse>
+          </NavbarCollapse>
         </Container>
       </Navbar>
     </header>
