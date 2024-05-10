@@ -125,4 +125,56 @@ a.nav-link {
   color: #6c757d;
 }
 
-/* Services */
+/* Contact Section */
+.contact {
+  background-color: #141414;
+  color: #ffe999;
+  margin-top: 60px;
+}
+.getIntouch {
+  margin: 0;
+  margin-top: 30px;
+  font-weight: 900;
+}
+.contact-form {
+  width: 100%;
+}
+label span {
+  font-weight: 900;
+  margin: 18px 0;
+}
+input {
+  background-color: #1f1f1f;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #d4d4d8;
+}
+textarea {
+  background-color: #1f1f1f;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #d4d4d8;
+}
+.btn-form {
+  background-color: #141414;
+  color: #d4d4d8;
+  font-weight: 900;
+  padding: 10px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  transition: ease-in-out 0.3s;
+}
+.btn-form:hover {
+  background-color: #ffe999;
+  color: #141414;
+}
